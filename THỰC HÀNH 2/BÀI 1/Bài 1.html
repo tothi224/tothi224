@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="b1.css">
+  </head>
+<body>
+
+<h1>GIẢI PHƯƠNG TRÌNH BẬC I</h1>
+
+<input type="text" id="aInput" placeholder="Hệ số a"> <br>
+    <input type="text" id="bInput" placeholder="Hệ số b"> <br>
+    <div class="center">
+    <button onclick="giaiPhuongTrinh()">Giải phương trình</button> 
+    </div>
+    <p> KẾT QUẢ </p> 
+    <p id="ketQua"></p>
+    
+
+  <script>
+        function giaiPhuongTrinh() {
+           
+            var a = parseFloat(document.getElementById("aInput").value);
+            var b = parseFloat(document.getElementById("bInput").value);
+
+            if (a === 0) {
+                document.getElementById("ketQua").innerText = "Phương trình không phải là phương trình bậc 1.";
+                return;
+            }
+
+            var x = -b / a;
+
+            document.getElementById("ketQua").innerText = "Nghiệm x = " + x;
+        }
+    </script>
+
+</body>
+</html>

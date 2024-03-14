@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <link rel="stylesheet" href="b6.css">
+  <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: white;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.signup {
+  width: auto;
+  padding: 9px 8px;
+  background-color: #99FFFF;
+  float: right;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+
+span.psw {
+  float: left;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+
+}
+</style>
+</head>
+<body>
+
+<h1>Log In </h1>
+ <p>
+      Login here using your username and password
+    </p>
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    
+  </div>
+ 
+  <div class="container">
+    <label for="uname"><b></b></label>
+    <input type="text" placeholder="Username" name="uname" required>
+
+    <label for="psw"><b></b></label>
+    <input type="password" placeholder="Password" name="psw" required>
+        
+    <button type="submit">Log In</button>
+   
+  </div>
+
+    
+    
+  <span class="psw">Forgot password</span>
+    <button type="button" class="signup">Sign Up</button>
+  
+    
+  </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+#wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: aliceblue;
+}
+body{
+    max-width: 400px;
+    background: black;
+    flex-grow: 1;
+    padding: 30px 30px 40px;
+   
+}
+button {
+    background-color: red;
+}
